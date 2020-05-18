@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="text-center serif" style="font-size:3.5em"><b>About</b></h1>
+</div>
+<div class="who-we-are" style="margin-bottom:2%">
+    <div class="container">
+        <div class="row" style="margin-bottom:2%">
+            <div class="col-sm-7">
+                <hr>
+                <h1 class="serif text-center" style="color: #1162E8; font-size: 3.5em"><b>Who We Are</b></h1>
+                <hr>
+                <h5 class="text-center">Welcome to <strong>{{ name }}</strong>!! We are located and operate out of the middle Georgia area, and are a home-grown business with over 15 years of experience. We have developed our business by being a reputable, dependable and trustworthy company among our customers. We have completed numerous projects for the NRCS, which attests to our quality of work. One thing that you will find out about us is that our quality of work is <strong><em>second to none!!</em></strong> We perform a majority of our services for local poultry farmers, and we are also able to complete residential and commercial work.</h5>
+            </div>
+            <div class="col-sm-5" style="max-height: 260px">
+                <img class="img-responsive rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%;height: 260px" alt="Staff Picture">
+            </div>
+        </div>
+        <div class="row">
+            <figure class="figure col-sm-3">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%; margin-bottom:1%; padding-bottom:1%" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-center"><b>Staff Member</b></figcaption>
+            </figure>
+            <figure class="figure col-sm-3">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%; margin-bottom:1%; padding-bottom:1%" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-center"><b>Staff Member</b></figcaption>
+            </figure>
+            <figure class="figure col-sm-3">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%; margin-bottom:1%; padding-bottom:1%" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-center"><b>Staff Member</b></figcaption>
+            </figure>
+            <figure class="figure col-sm-3">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%; margin-bottom:1%; padding-bottom:1%" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-center"><b>Staff Member</b></figcaption>
+            </figure>
+        </div>
+    </div><!--end container-->
+</div><!--end who-we-are-->
+<div class="history">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7">
+                <hr>
+                <h1 class="serif text-center" style="color: #1162E8; font-size: 3.5em"><b>History</b></h1>
+                <hr>
+                <h5 class="left">In the beginning, the founder of {{ short_name }} started this type of work when he built a farm at the age of 21. At that time, it was just him and a shovel, and quickly realized that there needed to be more dependable help in the field, which resulted in him branching off into forming this company in 2001. He slowly started earning a name for himself in the Roberta and middle Georgia area as he continued to do local land management.</h5>
+            </div>
+            <div class="col-sm-5" style="max-height: 260px">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%;height: 260px; border: 5px solid white" alt="A generic square placeholder image with rounded corners in a figure.">
+            </div>
+        </div>
+        <div class="row" style="margin:1% 0.25%">
+            <h5>Over the span of the past 15&plus; years, he would build up the reputation as the go-to guy that people would go to for construction and land management among farmers and landowners. {{ short_name }} reputation has been one of the main factors of the company's success. {{ short_name }} has worked with the NRCS on numerous projects as a direct result of this. He and the company has built rapport and credibility with hundreds, if not thousands, of people in need of construction and land management. </h5>
+        </div>
+    </div><!--end container-->
+</div><!--end history-->
+<div class="where-we-are" style="margin:2% 0">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-sm-7 order-last">
+                <hr>
+                <h1 class="serif text-center" style="color: #1162E8; font-size: 3.5em"><b>Where We Are</b></h1>
+                <hr>
+                <h5 class="text-center">We are located and operate out of Roberta, Georgia. Please feel free to contact us via our <a href="{{ url_for('contact')}}">Contact Us Form</a>, email us at <a href="">yourEmail@gmail.com</a>,  or give us a call at <a href="">478-555-5555</a>. </h5>
+            </div>
+            <div class="col-sm-5 order-first" style="max-height: 260px">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%;height: 260px" alt="A generic square placeholder image with rounded corners in a figure.">
+            </div>
+        </div>
+    </div><!--end container-->
+</div><!--end where-we-are-->
+{% endblock %}

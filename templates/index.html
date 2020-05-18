@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="home-jumbotron p-5 text-center bg-gray text-white">
+    <!-- <img class="img-fluid" src="{{ url_for('static', filename='images/baileysPoultryBanner.png') }}" alt="Banner"> -->
+    <h1 class="p-5 serif" style="font-size:6em">{{ name }}</h1>
+</div>
+<div class="container p-3">
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <hr>
+            <h1 class="serif" style="color: #1162E8; font-size: 3.5em"><b>What We Are About</b></h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <figure class="figure col-sm-4">
+                <img src="{{ url_for('static', filename='images/placeholder2.jpg') }}" style="width:100%" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-center"><h3><b><a href="{{ url_for('install') }}">Install</a></b></h3></figcaption>
+        </figure>
+        <figure class="figure col-sm-4">
+                <img src="{{ url_for('static', filename='images/placeholder2.jpg') }}" style="width:100%" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-center"><h3><b><a href="{{ url_for('sales') }}">Sales</a></b></h3></figcaption>
+        </figure>
+        <figure class="figure col-sm-4">
+                <img src="{{ url_for('static', filename='images/placeholder2.jpg') }}" style="width:100%;" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption text-center"><h3><b><a href="{{ url_for('equipment') }}">Equipment</a></b></h3></figcaption>
+        </figure>
+    </div><!--end services-->
+</div><!--end home container-->
+<div class="about p-3" style="margin-top:2%; background-color: rgba(17, 99, 232, 0.76); color: white;">
+    <div class="container">
+        <div class="row" style="margin-bottom:2%; margin-top: 2%;">
+            <div class="col-sm-8">
+                <hr>
+                <h1 class="serif text-center" style="color: white; font-size: 3.5em"><b>About Us</b></h1>
+                <hr>
+                <h5 class="text-center">Welcome to <strong>{{ name }}</strong>!! We are located and operate out of the middle Georgia area, and are a home-grown business with over 15 years of experience. We have developed our business by being a reputable, dependable and trustworthy company among our customers. We have completed numerous projects for the NRCS, which attests to our quality of work. One thing that you will find out about us is that our quality of work is <strong><em>second to none!!</em></strong> We perform a majority of our services for local poultry farmers, and we are also able to complete residential and commercial work.</h5>
+            </div>
+            <div class="col-sm-4" style="max-height: 260px">
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%;height: 260px" alt="Staff Picture">
+            </div>
+        </div>
+    </div><!--end container-->
+</div><!--end about-->
+<div class="why-us bg-light p-3">
+    <div class="container">
+        <div class="row" style="padding: 2%;">
+            <div class="col-sm-7 order-last">
+                <hr>
+                <h1 class="serif text-center" style="color: #1162E8; font-size: 3.5em"><b>Why Us?</b></h1>
+                <hr>
+                <h5 class="text-center">Here at <strong>{{ name }}</strong>, we offer a variety of poultry farm services, including installation, providing parts, maintenance, and construction. We are a home-grown local business with over 15 years of experience and have developed our business by being reputable, dependable and trustworthy among our clients in the middle Georgia area. <strong><em>Our quality of work is second to none!!</em></strong></h5>
+            </div>
+            <div class="col-sm-5 order-first" style="max-height: 260px">
+                <img class="img-fluid rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%;height: 260px" alt="Staff Picture">
+            </div>
+        </div>
+    </div><!--end container-->
+</div><!--end why-us-->
+<div class="container p-3" style="margin-bottom:2%">
+    <div class="row">
+        <div class="col-sm-12">
+            <hr>
+            <h1 class="serif text-center" style="color: #1162E8; font-size: 3.5em"><b>Get In Touch!</b></h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">* Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">* Phone:</label>
+                    <input type="phone" class="form-control" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">* Email address:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments:</label><br>
+                    <textarea name="message" id="comments" style="width:100%" rows="5"></textarea><br>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-6" style="margin-top:10%; padding-left:15%">
+            <h4><i class="fas fa-phone"></i>&nbsp;&nbsp;Phone: <a href="">478-555-5555</a></h4>   <br>             
+            <h4><i class="far fa-envelope"></i>&nbsp;&nbsp;Email: <a href="">yourEmail@gmail.com</a></h4>
+        </div>
+    </div>
+</div>
+<!-- <div class="container" id="our-work">
+    <div class="row">
+        <div class="col-sm-7">
+            <hr>
+            <h1 class="serif" style="color: #1162E8; font-size: 3.5em"><b>Our Work</b></h1>
+            <hr>
+        </div>
+        <div class="col-sm-5"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/clearing1.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/clearing2.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/clearing4.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/clearing3.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+    </div>
+    <div class="row" style="margin-top:15px">
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/construction/building1-2.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/construction/building1-inside.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/construction/building2.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/construction/building3.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+    </div>
+    <div class="row" style="margin-top:15px">
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/construction/building1-3.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/construction/building3.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/trenching.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <img class="rounded" src="images/service-images/trees1.jpg" style="width:100%; height:220px; margin-bottom: 5px !important;" alt="">
+        </div>
+    </div>
+</div> -->
+{% endblock %}

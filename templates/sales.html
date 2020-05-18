@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Sales{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="text-center serif" style="font-size: 3.6em;"><b>Sales</b></h1>
+</div>
+<div class="sales-page" style="margin-bottom: 2%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Parts Provider</h2>
+                <h4>At {{ name }}, we are able to provide parts for your older and newer poultry farm equipment. In addition, upon your request, we offer to provide you with either repair parts for your older poultry farm equipment or with new poultry farm equipment altogther if deemed appropriate.</h4>
+            </div>
+            <div class="col-sm-6">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%;height: 260px" alt="Parts">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

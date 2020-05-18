@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Equipment{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="text-center serif" style="font-size:3.5em"><b>Equipment</b></h1>
+</div>
+<div id="equipment" style="margin-bottom:2%">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Vehicles</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12">
+                <h2>Other</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+            <div class="col-sm-4">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width: 100%; height:220px; border:5px solid white" alt="Generic photo">
+            </div>
+        </div>
+    </div>
+</div><!--end equipment-->
+{% endblock %}

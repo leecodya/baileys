@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Install{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="text-center serif" style="font-size: 3.5em;"><b>Install</b></h1>
+</div>
+<div class="install-page" style="margin-bottom: 2%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Installation and Upgrade</h2>
+                <h5>We are able to install any poultry house  <strong><em>without affecting layout time</em></strong>! With our combined experience, we are able to install a quality poultry house in as little time as possible. We will be in-and-out while <strong><em>providing high quality results</em></strong>. We can do all of this during layout time, so there will be <strong>no extra time needed</strong>!</h5>
+            </div>
+            <div class="col-md-6">
+                <h2>Electrical Service</h2>
+                <h5>We understand that with any poultry house, you will need electrical work done, and is why in addition to building and installing poultry houses from the ground up, we are also able to install and configure any electrical work needed for the poultry houses, including but not limited to adding fans.</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <img class="rounded" src="{{ url_for('static', filename='images/placeholder.png') }}" style="width:100%;height: 400px" alt="Poultry House Installation">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

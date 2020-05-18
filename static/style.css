@@ -1,0 +1,79 @@
+.serif{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.rounded{
+    border-radius:5px !important;
+}
+.jumbotron{
+    background-image: url(images/placeholder.png);
+    padding: 80px 0 !important;
+}
+.home-jumbotron{
+    background-color: #555555;
+}
+hr{
+    border-top: 5px solid lightgrey !important;
+}
+.right{
+    text-align: right !important;
+}
+.left{
+    text-align: left !important;
+}
+.service2, .service4, #beforeAfter, .history{
+    margin-top:2%;
+    padding:2%;
+    background-color: #f0f0f0;
+}
+.about hr, .why-us hr, .service2 hr, .service4 hr, #beforeAfter hr, .history hr{
+    border-top: 5px solid white !important;
+}
+.service1{
+    margin-bottom: 2%;
+}
+.service3{
+    margin: 2% 0;
+}
+#our-work{
+    margin-top: 1%; 
+    margin-bottom: 1%;
+}
+#our-work img{
+    max-height:220px;
+    margin-bottom:2%
+}
+#equipment img, #beforeAfter img{
+    max-height:220px;
+}
+.install-page h2, .sales-page h2, .service-page h2{
+    border-left: 5px solid #1162E8;
+    padding-left: 0.5em;
+}
+
+
+/* When the width is between 450px and 768px */
+@media screen and (max-width: 770px) and (min-width: 500px){
+    figcaption h3{
+        font-size: 25px
+    }
+    .about img, .history img, .where-we-are img, .why-us img, #our-work img, .services-page img, #equipment img{
+        height: 180px !important;
+        width: 270px !important;
+        margin-left: 30%;
+    }
+    /* .home img{
+        width: 250px !important;
+        height: auto !important;
+    } */
+}
+/* Max width of 449*/
+@media only screen and (max-width: 499px){
+    figcaption h3{
+        font-size: 25px
+    }
+    .about img, .history img, .where-we-are img, .why-us img, #our-work img, .services-page img, #equipment img{
+        height: 180px !important;
+        width: 60% !important;
+        margin: 0 20% !important;
+    }
+}
