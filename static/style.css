@@ -6,10 +6,6 @@
 }
 .jumbotron{
     background-image: url(images/placeholder.png);
-    padding: 80px 0 !important;
-}
-.home-jumbotron{
-    background-color: #555555;
 }
 hr{
     border-top: 5px solid lightgrey !important;
